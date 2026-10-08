@@ -1,781 +1,1400 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>DevFolio Bootstrap Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="LUXE — Premium modern ecommerce store"> <meta name="theme-color" content="#111111"> <title>LUXE — Premium Ecommerce</title>
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+<style> :root { --bg: #f8f7f4; --surface: #ffffff; --surface-2: #f1f0ec; --text: #111111; --muted: #777777; --border: #e5e3de; --accent: #111111; --accent-2: #c9a96e; --danger: #c0392b; --success: #1d8a5a; --shadow: 0 20px 60px rgba(0,0,0,.10); --radius: 18px; --header-height: 78px; }
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+[data-theme="dark"] { --bg: #0e0e0e; --surface: #171717; --surface-2: #202020; --text: #f5f5f5; --muted: #a7a7a7; --border: #2d2d2d; --accent: #ffffff; --accent-2: #d4b274; --shadow: 0 20px 60px rgba(0,0,0,.35); }
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+{
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+margin: 0; padding: 0; box-sizing: border-box; }
 
-  <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
+html { scroll-behavior: smooth; }
 
-<body id="page-top">
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; transition: background .3s ease, color .3s ease; }
 
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">DevFolio</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--/ Nav End /-->
+body.no-scroll { overflow: hidden; }
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am Morgan Freeman</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Intro Skew End /-->
+button, input, textarea, select { font: inherit; }
 
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
-                      <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                    imperdiet et, porttitor
-                    at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                    porttitor accumsan tincidunt.
-                  </p>
-                  <p class="lead">
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                    porttitor volutpat. Vestibulum
-                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-                  </p>
-                  <p class="lead">
-                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                    Nulla porttitor accumsan
-                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+button { cursor: pointer; }
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Photography</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
+a { color: inherit; text-decoration: none; }
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+img { max-width: 100%; display: block; }
 
-  <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!--/ Section Portfolio End /-->
+.container { width: min(1180px, calc(100% - 40px)); margin: auto; }
 
-  <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Xavi Alonso</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Marta Socrate</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+.announcement { background: #111; color: #fff; text-align: center; padding: 9px 15px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
 
-  <!--/ Section Blog Star /-->
-  <section id="blog" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blog
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Blog End /-->
+header { height: var(--header-height); position: sticky; top: 0; z-index: 1000; background: color-mix(in srgb, var(--surface) 94%, transparent); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
 
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message Us
-                    </h5>
-                  </div>
-                  <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                              <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                      expedita aperiam aliquid at.
-                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                      mollitia inventore?
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                      <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                      <li><span class="ion-email"></span> contact@example.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-              <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
+.nav { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+.logo { font-size: 25px; font-weight: 900; letter-spacing: .18em; }
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+.logo span { color: var(--accent-2); }
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+.nav-links { display: flex; align-items: center; gap: 30px; list-style: none; font-size: 13px; font-weight: 600; }
 
-</body>
-</html>
+.nav-links a { position: relative; padding: 8px 0; }
+
+.nav-links a::after { content: ""; position: absolute; width: 0; height: 1px; bottom: 0; left: 0; background: var(--text); transition: width .25s; }
+
+.nav-links a:hover::after { width: 100%; }
+
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+
+.icon-btn { width: 42px; height: 42px; border: 0; background: transparent; color: var(--text); border-radius: 50%; display: grid; place-items: center; position: relative; font-size: 18px; }
+
+.icon-btn:hover { background: var(--surface-2); }
+
+.badge { position: absolute; top: 2px; right: 1px; min-width: 18px; height: 18px; border-radius: 50%; background: var(--accent-2); color: #111; font-size: 10px; font-weight: 800; display: grid; place-items: center; }
+
+.mobile-menu { display: none; }
+
+.hero { min-height: 680px; display: grid; place-items: center; position: relative; overflow: hidden; background: radial-gradient(circle at 75% 25%, rgba(201,169,110,.28), transparent 30%), linear-gradient(120deg, #ece9e1 0%, #f8f7f4 55%, #dedbd3 100%); }
+
+[data-theme="dark"] .hero { background: radial-gradient(circle at 75% 25%, rgba(201,169,110,.20), transparent 30%), linear-gradient(120deg, #181818, #0e0e0e 60%, #222); }
+
+.hero::before { content: ""; position: absolute; width: 500px; height: 500px; border: 1px solid rgba(0,0,0,.08); border-radius: 50%; right: -100px; top: 80px; }
+
+.hero-content { position: relative; z-index: 2; width: min(1180px, calc(100% - 40px)); display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; }
+
+.eyebrow { color: var(--accent-2); font-size: 12px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 18px; }
+
+.hero h1 { font-size: clamp(50px, 7vw, 88px); line-height: .95; letter-spacing: -.06em; max-width: 650px; margin-bottom: 25px; }
+
+.hero h1 span { color: var(--accent-2); font-style: italic; font-family: Georgia, serif; font-weight: 400; }
+
+.hero p { max-width: 520px; color: var(--muted); font-size: 17px; margin-bottom: 32px; }
+
+.btn { border: 1px solid var(--text); background: var(--text); color: var(--bg); padding: 14px 24px; border-radius: 999px; font-weight: 700; font-size: 13px; transition: .25s; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+
+.btn:hover { transform: translateY(-2px); opacity: .9; }
+
+.btn-outline { background: transparent; color: var(--text); }
+
+.btn-gold { background: var(--accent-2); border-color: var(--accent-2); color: #111; }
+
+.hero-card { height: 500px; border-radius: 35px; overflow: hidden; position: relative; box-shadow: var(--shadow); background: #ddd; }
+
+.hero-card img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-card-label { position: absolute; left: 25px; bottom: 25px; background: rgba(255,255,255,.88); color: #111; padding: 16px 20px; border-radius: 14px; backdrop-filter: blur(12px); }
+
+.hero-card-label strong { display: block; font-size: 18px; }
+
+section { padding: 100px 0; }
+
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 45px; }
+
+.section-head h2 { font-size: clamp(34px, 5vw, 52px); line-height: 1; letter-spacing: -.04em; }
+
+.section-head p { max-width: 470px; color: var(--muted); }
+
+.categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+
+.category { min-height: 220px; border-radius: var(--radius); overflow: hidden; position: relative; background: var(--surface-2); cursor: pointer; }
+
+.category img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+
+.category:hover img { transform: scale(1.06); }
+
+.category-overlay { position: absolute; inset: 0; background: linear-gradient(transparent 35%, rgba(0,0,0,.7)); display: flex; align-items: end; padding: 25px; color: white; }
+
+.category h3 { font-size: 23px; }
+
+.shop-toolbar { display: flex; gap: 12px; margin-bottom: 30px; flex-wrap: wrap; }
+
+.search-box { flex: 1; min-width: 230px; position: relative; }
+
+.search-box input, .select, .form-control { width: 100%; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 12px; padding: 14px 16px; outline: none; }
+
+.search-box input:focus, .select:focus, .form-control:focus { border-color: var(--accent-2); }
+
+.select { width: 190px; }
+
+.filter-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 12px; padding: 0 18px; }
+
+.filter-btn.active { background: var(--text); color: var(--bg); }
+
+.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.product { position: relative; min-width: 0; }
+
+.product-image { aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; position: relative; background: var(--surface-2); margin-bottom: 16px; }
+
+.product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+
+.product:hover .product-image img { transform: scale(1.05); }
+
+.product-tag { position: absolute; left: 12px; top: 12px; background: var(--surface); color: var(--text); padding: 6px 10px; border-radius: 20px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+
+.wishlist { position: absolute; top: 12px; right: 12px; width: 38px; height: 38px; border: 0; border-radius: 50%; background: rgba(255,255,255,.9); color: #111; display: grid; place-items: center; font-size: 17px; z-index: 2; }
+
+.wishlist.active { color: #c0392b; }
+
+.quick-add { position: absolute; bottom: 12px; left: 12px; right: 12px; opacity: 0; transform: translateY(10px); transition: .25s; }
+
+.product:hover .quick-add { opacity: 1; transform: translateY(0); }
+
+.product-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+
+.product-category { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+
+.product-bottom { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+
+.price { font-weight: 800; }
+
+.old-price { color: var(--muted); text-decoration: line-through; margin-left: 6px; font-weight: 400; }
+
+.stars { color: #d4a844; font-size: 12px; }
+
+.promo { background: #171717; color: white; border-radius: 30px; padding: 65px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; }
+
+.promo h2 { font-size: clamp(30px, 5vw, 55px); line-height: 1; margin-bottom: 14px; }
+
+.promo p { color: #aaa; max-width: 550px; }
+
+.newsletter { display: flex; margin-top: 25px; max-width: 500px; }
+
+.newsletter input { flex: 1; padding: 15px; border: 0; border-radius: 999px 0 0 999px; outline: none; }
+
+.newsletter button { border: 0; padding: 0 22px; border-radius: 0 999px 999px 0; background: var(--accent-2); color: #111; font-weight: 800; }
+
+.features { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.feature { padding: 30px 20px; border-right: 1px solid var(--border); }
+
+.feature:last-child { border: 0; }
+
+.feature-icon { font-size: 25px; margin-bottom: 12px; }
+
+.feature h3 { font-size: 15px; margin-bottom: 5px; }
+
+.feature p { color: var(--muted); font-size: 12px; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+
+.about-image { height: 560px; border-radius: 25px; overflow: hidden; }
+
+.about-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.about-copy h2 { font-size: clamp(38px, 5vw, 65px); line-height: 1; letter-spacing: -.05em; margin-bottom: 25px; }
+
+.about-copy p { color: var(--muted); margin-bottom: 20px; }
+
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 35px; gap: 20px; }
+
+.stat strong { display: block; font-size: 30px; }
+
+.stat span { color: var(--muted); font-size: 12px; }
+
+.contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+
+.contact-copy h2 { font-size: 50px; line-height: 1; margin-bottom: 20px; }
+
+.contact-copy p { color: var(--muted); margin-bottom: 25px; }
+
+.contact-info { display: grid; gap: 15px; }
+
+.contact-item { padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; }
+
+.contact-item small { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+.form-group { margin-bottom: 15px; }
+
+.form-group.full { grid-column: 1 / -1; }
+
+textarea.form-control { min-height: 150px; resize: vertical; }
+
+footer { background: #111; color: #fff; padding: 65px 0 25px; }
+
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; }
+
+footer h3 { font-size: 14px; margin-bottom: 18px; }
+
+footer p, footer li, footer a { color: #999; font-size: 13px; }
+
+footer ul { list-style: none; display: grid; gap: 10px; }
+
+footer a:hover { color: white; }
+
+.footer-bottom { border-top: 1px solid #2b2b2b; padding-top: 20px; display: flex; justify-content: space-between; color: #777; font-size: 12px; gap: 15px; }
+
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 1900; opacity: 0; visibility: hidden; transition: .25s; }
+
+.overlay.active { opacity: 1; visibility: visible; }
+
+.cart-drawer { position: fixed; right: 0; top: 0; height: 100vh; width: min(450px, 100%); background: var(--surface); z-index: 2000; transform: translateX(100%); transition: transform .3s ease; display: flex; flex-direction: column; box-shadow: -20px 0 60px rgba(0,0,0,.15); }
+
+.cart-drawer.active { transform: translateX(0); }
+
+.drawer-head { padding: 22px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+
+.drawer-head h2 { font-size: 22px; }
+
+.cart-items { padding: 20px; overflow: auto; flex: 1; }
+
+.empty-cart { text-align: center; padding: 80px 20px; color: var(--muted); }
+
+.empty-cart .emoji { font-size: 50px; margin-bottom: 15px; }
+
+.cart-item { display: grid; grid-template-columns: 75px 1fr auto; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+
+.cart-item-image { width: 75px; height: 85px; border-radius: 10px; overflow: hidden; }
+
+.cart-item-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.cart-item-name { font-weight: 700; font-size: 13px; margin-bottom: 3px; }
+
+.cart-item-price { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+
+.qty { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+
+.qty button { border: 0; background: var(--surface-2); color: var(--text); width: 28px; height: 28px; }
+
+.qty span { width: 28px; display: grid; place-items: center; font-size: 12px; }
+
+.remove-item { border: 0; background: transparent; color: var(--muted); font-size: 12px; }
+
+.remove-item:hover { color: var(--danger); }
+
+.cart-footer { border-top: 1px solid var(--border); padding: 20px; }
+
+.summary-line { display: flex; justify-content: space-between; margin-bottom: 10px; color: var(--muted); font-size: 13px; }
+
+.summary-line.total { color: var(--text); font-size: 18px; font-weight: 800; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border); }
+
+.full-btn { width: 100%; margin-top: 15px; }
+
+.modal { position: fixed; inset: 0; z-index: 2100; display: grid; place-items: center; padding: 20px; opacity: 0; visibility: hidden; transition: .25s; }
+
+.modal.active { opacity: 1; visibility: visible; }
+
+.modal-box { background: var(--surface); width: min(900px, 100%); max-height: 90vh; overflow: auto; border-radius: 24px; position: relative; transform: translateY(20px); transition: .25s; box-shadow: var(--shadow); }
+
+.modal.active .modal-box { transform: translateY(0); }
+
+.close-modal { position: absolute; top: 15px; right: 15px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--surface-2); color: var(--text); z-index: 5; }
+
+.quick-view { display: grid; grid-template-columns: 1fr 1fr; }
+
+.quick-view-image { min-height: 500px; }
+
+.quick-view-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 24px 0 0 24px; }
+
+.quick-view-content { padding: 55px 40px; }
+
+.quick-view-content h2 { font-size: 38px; line-height: 1; margin: 10px 0 15px; }
+
+.quick-view-content p { color: var(--muted); margin: 20px 0; }
+
+.modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.55); z-index: -1; }
+
+.checkout { padding: 40px; }
+
+.checkout-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 40px; }
+
+.checkout h2 { margin-bottom: 25px; font-size: 30px; }
+
+.checkout-summary { background: var(--surface-2); padding: 25px; border-radius: 15px; height: fit-content; }
+
+.payment-note { margin-top: 15px; color: var(--muted); font-size: 11px; }
+
+.success { text-align: center; padding: 70px 30px; }
+
+.success-icon { width: 70px; height: 70px; margin: auto auto 20px; border-radius: 50%; background: rgba(29,138,90,.12); color: var(--success); display: grid; place-items: center; font-size: 30px; }
+
+.toast-container { position: fixed; right: 20px; bottom: 20px; z-index: 5000; display: grid; gap: 10px; }
+
+.toast { min-width: 260px; max-width: 350px; background: var(--text); color: var(--bg); padding: 14px 17px; border-radius: 12px; box-shadow: var(--shadow); animation: toastIn .3s ease; font-size: 13px; }
+
+.toast.success-toast { border-left: 4px solid var(--success); }
+
+.toast.error-toast { border-left: 4px solid var(--danger); }
+
+@keyframes toastIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+.no-results { grid-column: 1 / -1; text-align: center; padding: 70px 20px; color: var(--muted); }
+
+.hidden { display: none !important; }
+
+@media (max-width: 1000px) { .products { grid-template-columns: repeat(3, 1fr); }
+
+.categories { grid-template-columns: repeat(2, 1fr); }
+
+.features { grid-template-columns: repeat(2, 1fr); }
+
+.feature:nth-child(2) { border-right: 0; }
+
+.feature:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+
+.footer-grid { grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 760px) { :root { --header-height: 68px; }
+
+.container { width: min(100% - 28px, 1180px); }
+
+section { padding: 70px 0; }
+
+.nav-links { position: fixed; top: calc(var(--header-height) + 1px); left: 0; right: 0; background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px; display: none; flex-direction: column; align-items: flex-start; }
+
+.nav-links.active { display: flex; }
+
+.mobile-menu { display: grid; }
+
+.hero { min-height: auto; padding: 80px 0; }
+
+.hero-content { grid-template-columns: 1fr; }
+
+.hero-card { height: 420px; }
+
+.hero h1 { font-size: 54px; }
+
+.products { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.quick-add { opacity: 1; transform: none; }
+
+.section-head { display: block; }
+
+.section-head p { margin-top: 15px; }
+
+.promo { grid-template-columns: 1fr; padding: 40px 25px; }
+
+.about-grid, .contact-grid, .checkout-grid, .quick-view { grid-template-columns: 1fr; }
+
+.about-image { height: 400px; }
+
+.quick-view-image { min-height: 350px; }
+
+.quick-view-image img { border-radius: 24px 24px 0 0; }
+
+.quick-view-content { padding: 35px 25px; }
+
+.footer-grid { grid-template-columns: 1fr 1fr; }
+
+.footer-grid > div:first-child { grid-column: 1 / -1; } }
+
+@media (max-width: 500px) { .products, .categories, .features { grid-template-columns: 1fr; }
+
+.feature, .feature:nth-child(2) { border-right: 0; border-bottom: 1px solid var(--border); }
+
+.feature:last-child { border-bottom: 0; }
+
+.form-grid { grid-template-columns: 1fr; }
+
+.form-group.full { grid-column: auto; }
+
+.footer-grid { grid-template-columns: 1fr; }
+
+.footer-grid > div:first-child { grid-column: auto; }
+
+.newsletter { display: grid; gap: 8px; }
+
+.newsletter input, .newsletter button { border-radius: 999px; min-height: 48px; } } </style> </head>
+
+<body>
+
+<div class="announcement"> Free worldwide shipping on orders over $150 · Easy 30-day returns </div>
+
+<header> <div class="container nav"> <a href="#home" class="logo">LU<span>X</span>E</a>
+
+<nav> <ul class="nav-links" id="navLinks"> <li><a href="#home">Home</a></li> <li><a href="#shop">Shop</a></li> <li><a href="#collections">Collections</a></li> <li><a href="#about">About</a></li> <li><a href="#contact">Contact</a></li> </ul> </nav>
+
+<div class="nav-actions"> <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☾</button>
+
+<button class="icon-btn" id="wishlistNav" aria-label="Wishlist"> ♡ <span class="badge hidden" id="wishlistCount">0</span> </button>
+
+<button class="icon-btn" id="cartButton" aria-label="Shopping cart"> 🛒 <span class="badge" id="cartCount">0</span> </button>
+
+<button class="icon-btn mobile-menu" id="mobileMenu" aria-label="Menu">☰</button> </div> </div> </header>
+
+<main id="home">
+
+<section class="hero"> <div class="hero-content"> <div> <div class="eyebrow">New season · 2026 collection</div> <h1>Designed for <span>those</span> who notice.</h1> <p> Discover carefully selected essentials where contemporary design, premium materials and effortless everyday luxury meet. </p>
+
+<a href="#shop" class="btn"> Shop collection → </a> <a href="#collections" class="btn btn-outline" style="margin-left:8px;"> Explore </a> </div>
+
+<div class="hero-card"> <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="Luxury fashion collection"> <div class="hero-card-label"> <strong>Autumn / Winter</strong> <small>Curated essentials</small> </div> </div> </div> </section>
+
+<section id="collections"> <div class="container"> <div class="section-head"> <div> <div class="eyebrow">Shop by category</div> <h2>Find your aesthetic.</h2> </div> <p> Refined pieces designed to move effortlessly between everyday moments and the occasions worth remembering. </p> </div>
+
+<div class="categories"> <div class="category" data-category="Fashion"> <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Fashion"> <div class="category-overlay"> <h3>Fashion</h3> </div> </div>
+
+<div class="category" data-category="Accessories"> <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85" alt="Accessories"> <div class="category-overlay"> <h3>Accessories</h3> </div> </div>
+
+<div class="category" data-category="Home"> <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Home"> <div class="category-overlay"> <h3>Home</h3> </div> </div>
+
+<div class="category" data-category="Beauty"> <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85" alt="Beauty"> <div class="category-overlay"> <h3>Beauty</h3> </div> </div> </div> </div> </section>
+
+<section id="shop"> <div class="container"> <div class="section-head"> <div> <div class="eyebrow">The edit</div> <h2>Best sellers.</h2> </div> <p> Modern classics, elevated essentials and pieces selected for quality, versatility and timeless appeal. </p> </div>
+
+<div class="shop-toolbar"> <div class="search-box"> <input type="search" id="searchInput" placeholder="Search products..." aria-label="Search products"> </div>
+
+<button class="filter-btn active" data-filter="All">All</button> <button class="filter-btn" data-filter="Fashion">Fashion</button> <button class="filter-btn" data-filter="Accessories">Accessories</button> <button class="filter-btn" data-filter="Home">Home</button> <button class="filter-btn" data-filter="Beauty">Beauty</button>
+
+<select class="select" id="sortSelect" aria-label="Sort products"> <option value="featured">Featured</option> <option value="price-low">Price: Low to high</option> <option value="price-high">Price: High to low</option> <option value="rating">Top rated</option> <option value="name">Name</option> </select> </div>
+
+<div class="products" id="productGrid"></div> </div> </section>
+
+<section> <div class="container"> <div class="promo"> <div> <div class="eyebrow">Private access</div> <h2>10% off your first order.</h2> <p> Join the LUXE list for early access to collections, private offers and editorial inspiration. </p>
+
+<form class="newsletter" id="newsletterForm"> <input type="email" id="newsletterEmail" placeholder="Your email address" required> <button type="submit">Join LUXE</button> </form> </div>
+
+<div> <div style="font-size:70px;">✦</div> </div> </div> </div> </section>
+
+<section> <div class="container"> <div class="features"> <div class="feature"> <div class="feature-icon">✦</div> <h3>Premium quality</h3> <p>Thoughtfully sourced materials and considered craftsmanship.</p> </div>
+
+<div class="feature"> <div class="feature-icon">↗</div> <h3>Worldwide delivery</h3> <p>Fast, reliable shipping available across the globe.</p> </div>
+
+<div class="feature"> <div class="feature-icon">↺</div> <h3>30-day returns</h3> <p>Shop confidently with our straightforward return policy.</p> </div>
+
+<div class="feature"> <div class="feature-icon">♡</div> <h3>Human support</h3> <p>Our team is here whenever you need help.</p> </div> </div> </div> </section>
+
+<section id="about"> <div class="container"> <div class="about-grid"> <div class="about-image"> <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85" alt="LUXE store"> </div>
+
+<div class="about-copy"> <div class="eyebrow">Our philosophy</div> <h2>Less, but considerably better.</h2>
+
+<p> LUXE was created around a simple idea: great design should not need to shout. </p>
+
+<p> We curate premium products with an emphasis on materials, functionality, longevity and understated beauty. </p>
+
+<div class="stats"> <div class="stat"> <strong>48k+</strong> <span>Happy customers</span> </div> <div class="stat"> <strong>24</strong> <span>Countries</span> </div> <div class="stat"> <strong>4.9/5</strong> <span>Average rating</span> </div> </div> </div> </div> </div> </section>
+
+<section id="contact"> <div class="container"> <div class="contact-grid"> <div class="contact-copy"> <div class="eyebrow">Contact</div> <h2>Let's talk.</h2> <p> Have a question about an order, product or partnership? Send us a message and our team will get back to you. </p>
+
+<div class="contact-info"> <div class="contact-item"> <small>Email</small> hello@luxestore.com </div>
+
+<div class="contact-item"> <small>Phone</small> +27 10 555 0199 </div>
+
+<div class="contact-item"> <small>Hours</small> Mon–Fri · 08:00–17:00 </div> </div> </div>
+
+<form id="contactForm"> <div class="form-grid"> <div class="form-group"> <input class="form-control" id="contactName" placeholder="Your name" required> </div>
+
+<div class="form-group"> <input class="form-control" type="email" id="contactEmail" placeholder="Email address" required> </div>
+
+<div class="form-group full"> <input class="form-control" id="contactSubject" placeholder="Subject" required> </div>
+
+<div class="form-group full"> <textarea class="form-control" id="contactMessage" placeholder="Your message" required></textarea> </div>
+
+<div class="form-group full"> <button class="btn" type="submit">Send message →</button> </div> </div> </form> </div> </div> </section>
+
+</main>
+
+<footer> <div class="container"> <div class="footer-grid"> <div> <div class="logo" style="margin-bottom:15px;">LU<span>X</span>E</div> <p> A modern destination for considered products, elevated essentials and timeless design. </p> </div>
+
+<div> <h3>Shop</h3> <ul> <li><a href="#shop">All products</a></li> <li><a href="#shop">New arrivals</a></li> <li><a href="#shop">Best sellers</a></li> <li><a href="#shop">Sale</a></li> </ul> </div>
+
+<div> <h3>Company</h3> <ul> <li><a href="#about">About us</a></li> <li><a href="#contact">Contact</a></li> <li><a href="#">Shipping</a></li> <li><a href="#">Returns</a></li> </ul> </div>
+
+<div> <h3>Follow</h3> <ul> <li><a href="#">Instagram</a></li> <li><a href="#">Pinterest</a></li> <li><a href="#">Facebook</a></li> <li><a href="#">TikTok</a></li> </ul> </div> </div>
+
+<div class="footer-bottom"> <span>© 2026 LUXE. All rights reserved.</span> <span>Privacy · Terms · Cookies</span> </div> </div> </footer>
+
+<!-- CART --> <div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer"> <div class="drawer-head"> <h2>Your bag</h2> <button class="icon-btn" id="closeCart">×</button> </div>
+
+<div class="cart-items" id="cartItems"></div>
+
+<div class="cart-footer"> <div class="summary-line"> <span>Subtotal</span> <span id="cartSubtotal">$0.00</span> </div>
+
+<div class="summary-line"> <span>Shipping</span> <span id="cartShipping">$0.00</span> </div>
+
+<div class="summary-line"> <span>Discount</span> <span id="cartDiscount">$0.00</span> </div>
+
+<div class="summary-line total"> <span>Total</span> <span id="cartTotal">$0.00</span> </div>
+
+<button class="btn full-btn" id="checkoutButton"> Secure checkout → </button> </div> </aside>
+
+<!-- QUICK VIEW MODAL --> <div class="modal" id="productModal"> <div class="modal-overlay"></div>
+
+<div class="modal-box"> <button class="close-modal" id="closeProductModal">×</button>
+
+<div class="quick-view"> <div class="quick-view-image"> <img id="modalProductImage" src="" alt=""> </div>
+
+<div class="quick-view-content"> <div class="eyebrow" id="modalProductCategory"></div> <h2 id="modalProductName"></h2> <div class="stars" id="modalProductRating"></div> <h3 id="modalProductPrice" style="margin-top:15px;"></h3> <p id="modalProductDescription"></p>
+
+<button class="btn full-btn" id="modalAddButton"> Add to bag </button> </div> </div> </div> </div>
+
+<!-- CHECKOUT MODAL --> <div class="modal" id="checkoutModal"> <div class="modal-overlay"></div>
+
+<div class="modal-box"> <button class="close-modal" id="closeCheckoutModal">×</button>
+
+<div class="checkout" id="checkoutContent"> <div class="checkout-grid"> <div> <div class="eyebrow">Secure checkout</div> <h2>Complete your order.</h2>
+
+<form id="checkoutForm"> <div class="form-grid"> <div class="form-group"> <input class="form-control" id="checkoutFirstName" placeholder="First name" required> </div>
+
+<div class="form-group"> <input class="form-control" id="checkoutLastName" placeholder="Last name" required> </div>
+
+<div class="form-group full"> <input class="form-control" type="email" id="checkoutEmail" placeholder="Email address" required> </div>
+
+<div class="form-group full"> <input class="form-control" id="checkoutAddress" placeholder="Street address" required> </div>
+
+<div class="form-group"> <input class="form-control" id="checkoutCity" placeholder="City" required> </div>
+
+<div class="form-group"> <input class="form-control" id="checkoutPostal" placeholder="Postal code" required> </div>
+
+<div class="form-group full"> <select class="form-control" id="checkoutCountry" required> <option value="">Select country</option> <option>South Africa</option> <option>United States</option> <option>United Kingdom</option> <option>Australia</option> <option>Canada</option> <option>Germany</option> <option>France</option> <option>Other</option> </select> </div>
+
+<div class="form-group full"> <input class="form-control" id="checkoutCard" placeholder="Card number (demo only)" maxlength="19" required> </div>
+
+<div class="form-group"> <input class="form-control" id="checkoutExpiry" placeholder="MM / YY" maxlength="7" required> </div>
+
+<div class="form-group"> <input class="form-control" id="checkoutCvv" placeholder="CVV" maxlength="4" required> </div>
+
+<div class="form-group full"> <button class="btn btn-gold full-btn" type="submit"> Place order → </button> </div> </div> </form>
+
+<p class="payment-note"> 🔒 Demo checkout. No real card payment is processed by this static GitHub Pages version. </p> </div>
+
+<div class="checkout-summary"> <h3 style="margin-bottom:20px;">Order summary</h3> <div id="checkoutSummary"></div> </div> </div> </div> </div> </div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script> /* ============================================================ LUXE ECOMMERCE Front-end store engine ============================================================ */
+
+const products = [ { id: 1, name: "Aurelia Oversized Blazer", category: "Fashion", price: 189, oldPrice: 229, rating: 4.9, tag: "Bestseller", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85", description: "A structured oversized blazer crafted for effortless tailoring and everyday sophistication." }, { id: 2, name: "Noir Leather Tote", category: "Accessories", price: 159, oldPrice: null, rating: 4.8, tag: "New", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85", description: "A refined leather-inspired tote with a spacious interior and minimalist hardware." }, { id: 3, name: "Luna Signature Watch", category: "Accessories", price: 249, oldPrice: 299, rating: 4.9, tag: "Icon", image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85", description: "Minimal proportions, polished details and a timeless silhouette designed for every occasion." }, { id: 4, name: "Cashmere Essential Knit", category: "Fashion", price: 139, oldPrice: null, rating: 4.7, tag: "New", image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85", description: "A soft, versatile knit designed as a luxurious foundation for your wardrobe." }, { id: 5, name: "Santal Home Candle", category: "Home", price: 49, oldPrice: 59, rating: 4.9, tag: "Bestseller", image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85", description: "Warm sandalwood, cedar and amber notes in a beautifully understated vessel." }, { id: 6, name: "Marble Accent Lamp", category: "Home", price: 119, oldPrice: null, rating: 4.6, tag: "Design", image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85", description: "A sculptural accent lamp that brings warm ambient light and architectural simplicity." }, { id: 7, name: "Silk Glow Serum", category: "Beauty", price: 69, oldPrice: null, rating: 4.8, tag: "Beauty", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85", description: "A lightweight daily serum formulated for a smooth, hydrated and luminous finish." }, { id: 8, name: "Velvet Evening Dress", category: "Fashion", price: 219, oldPrice: 259, rating: 5.0, tag: "Limited", image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=900&q=85", description: "A sophisticated evening silhouette with rich texture and elegant movement." }, { id: 9, name: "Sculptural Ceramic Vase", category: "Home", price: 79, oldPrice: null, rating: 4.7, tag: "New", image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=85", description: "A contemporary ceramic form designed to stand beautifully alone or with fresh stems." }, { id: 10, name: "Signature Sunglasses", category: "Accessories", price: 99, oldPrice: 129, rating: 4.8, tag: "Popular", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85", description: "Classic sunglasses with a modern frame designed to complement every look." }, { id: 11, name: "Nocturne Eau de Parfum", category: "Beauty", price: 109, oldPrice: null, rating: 4.9, tag: "Icon", image: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85", description: "A sophisticated fragrance blending warm woods, amber and subtle floral notes." }, { id: 12, name: "Cloud Linen Shirt", category: "Fashion", price: 89, oldPrice: 109, rating: 4.7, tag: "Essential", image: "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85", description: "An effortlessly relaxed linen shirt made for warm days and easy layering." } ];
+
+let cart = JSON.parse(localStorage.getItem("luxe-cart") || "[]"); let wishlist = JSON.parse(localStorage.getItem("luxe-wishlist") || "[]"); let activeFilter = "All"; let searchTerm = ""; let selectedProduct = null; let discount = 0;
+
+const $ = selector => document.querySelector(selector); const $$ = selector => document.querySelectorAll(selector);
+
+function money(value) { return "$" + Number(value).toFixed(2); }
+
+function saveState() { localStorage.setItem("luxe-cart", JSON.stringify(cart)); localStorage.setItem("luxe-wishlist", JSON.stringify(wishlist)); }
+
+function showToast(message, type = "success") { const toast = document.createElement("div"); toast.className = "toast " + (type === "error" ? "error-toast" : "success-toast"); toast.textContent = message;
+
+$("#toastContainer").appendChild(toast);
+
+setTimeout(() => { toast.style.opacity = "0"; toast.style.transform = "translateY(10px)";
+
+setTimeout(() => toast.remove(), 250); }, 3000); }
+
+function stars(rating) { const full = Math.round(rating); return "★".repeat(full) + "☆".repeat(5 - full); }
+
+function getFilteredProducts() { let result = [...products];
+
+if (activeFilter !== "All") { result = result.filter(product => product.category === activeFilter); }
+
+if (searchTerm) { result = result.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()) || product.category.toLowerCase().includes(searchTerm.toLowerCase()) ); }
+
+const sort = $("#sortSelect").value;
+
+if (sort === "price-low") { result.sort((a, b) => a.price - b.price); }
+
+if (sort === "price-high") { result.sort((a, b) => b.price - a.price); }
+
+if (sort === "rating") { result.sort((a, b) => b.rating - a.rating); }
+
+if (sort === "name") { result.sort((a, b) => a.name.localeCompare(b.name)); }
+
+return result; }
+
+function renderProducts() { const grid = $("#productGrid"); const list = getFilteredProducts();
+
+if (!list.length) { grid.innerHTML = <div class="no-results"> <h3>No products found.</h3> <p>Try another search or category.</p> </div> ; return; }
+
+grid.innerHTML = list.map(product => ` <article class="product"> <div class="product-image"> <img src="
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑖
+𝑚
+𝑎
+𝑔
+𝑒
+"
+𝑎
+𝑙
+𝑡
+=
+"
+{product.name}" loading="lazy">
+
+<span class="product-tag">${product.tag}</span>
+
+<button class="wishlist 
+𝑤
+𝑖
+𝑠
+ℎ
+𝑙
+𝑖
+𝑠
+𝑡
+.
+𝑖
+𝑛
+𝑐
+𝑙
+𝑢
+𝑑
+𝑒
+𝑠
+(
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑖
+𝑑
+)
+?
+"
+𝑎
+𝑐
+𝑡
+𝑖
+𝑣
+𝑒
+"
+:
+"
+"
+"
+𝑜
+𝑛
+𝑐
+𝑙
+𝑖
+𝑐
+𝑘
+=
+"
+𝑡
+𝑜
+𝑔
+𝑔
+𝑙
+𝑒
+𝑊
+𝑖
+𝑠
+ℎ
+𝑙
+𝑖
+𝑠
+𝑡
+(
+{product.id})" aria-label="Add to wishlist"> ${wishlist.includes(product.id) ? "♥" : "♡"} </button>
+
+<div class="quick-add"> <button class="btn full-btn" onclick="addToCart(${product.id})"> Add to bag </button> </div> </div>
+
+<div class="product-category">${product.category}</div>
+
+<button onclick="openProduct(
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑖
+𝑑
+)
+"
+𝑠
+𝑡
+𝑦
+𝑙
+𝑒
+=
+"
+𝑏
+𝑜
+𝑟
+𝑑
+𝑒
+𝑟
+:
+0
+;
+𝑏
+𝑎
+𝑐
+𝑘
+𝑔
+𝑟
+𝑜
+𝑢
+𝑛
+𝑑
+:
+𝑛
+𝑜
+𝑛
+𝑒
+;
+𝑐
+𝑜
+𝑙
+𝑜
+𝑟
+:
+𝑖
+𝑛
+ℎ
+𝑒
+𝑟
+𝑖
+𝑡
+;
+𝑝
+𝑎
+𝑑
+𝑑
+𝑖
+𝑛
+𝑔
+:
+0
+;
+𝑡
+𝑒
+𝑥
+𝑡
+−
+𝑎
+𝑙
+𝑖
+𝑔
+𝑛
+:
+𝑙
+𝑒
+𝑓
+𝑡
+;
+𝑤
+𝑖
+𝑑
+𝑡
+ℎ
+:
+100
+{product.name}</div> </button>
+
+<div class="product-bottom"> <div class="price"> ${money(product.price)} ${product.oldPrice ? <span class="old-price">${money(product.oldPrice)}</span> : ""} </div>
+
+<div class="stars">${stars(product.rating)}</div> </div> </article> `).join(""); }
+
+function addToCart(id, quantity = 1) { const product = products.find(p => p.id === id);
+
+if (!product) return;
+
+const existing = cart.find(item => item.id === id);
+
+if (existing) { existing.quantity += quantity; } else { cart.push({ id, quantity }); }
+
+saveState(); updateCart(); showToast(${product.name} added to your bag.); }
+
+function removeFromCart(id) { cart = cart.filter(item => item.id !== id); saveState(); updateCart(); }
+
+function changeQuantity(id, amount) { const item = cart.find(item => item.id === id);
+
+if (!item) return;
+
+item.quantity += amount;
+
+if (item.quantity <= 0) { removeFromCart(id); return; }
+
+saveState(); updateCart(); }
+
+function cartDetails() { return cart.map(item => { const product = products.find(p => p.id === item.id);
+
+return { ...item, product }; }).filter(item => item.product); }
+
+function getSubtotal() { return cartDetails().reduce( (sum, item) => sum + item.product.price * item.quantity, 0 ); }
+
+function getShipping() { const subtotal = getSubtotal();
+
+if (subtotal === 0) return 0; if (subtotal >= 150) return 0;
+
+return 12; }
+
+function getDiscount() { return getSubtotal() * discount; }
+
+function getTotal() { return Math.max( 0, getSubtotal() + getShipping() - getDiscount() ); }
+
+function updateCart() { const details = cartDetails();
+
+const count = details.reduce( (sum, item) => sum + item.quantity, 0 );
+
+$("#cartCount").textContent = count;
+
+if (!details.length) { $("#cartItems").innerHTML = <div class="empty-cart"> <div class="emoji">🛍</div> <h3>Your bag is empty</h3> <p>Discover something beautiful.</p> <button class="btn" onclick="closeCartDrawer();document.querySelector('#shop').scrollIntoView({behavior:'smooth'})" style="margin-top:20px;"> Shop now </button> </div> ; } else { $("#cartItems").innerHTML = details.map(item => ` <div class="cart-item"> <div class="cart-item-image"> <img src="
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑖
+𝑚
+𝑎
+𝑔
+𝑒
+"
+𝑎
+𝑙
+𝑡
+=
+"
+{item.product.name}"> </div>
+
+<div> <div class="cart-item-name">
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑛
+𝑎
+𝑚
+𝑒
+<
+/
+𝑑
+𝑖
+𝑣
+>
+<
+𝑑
+𝑖
+𝑣
+𝑐
+𝑙
+𝑎
+𝑠
+𝑠
+=
+"
+𝑐
+𝑎
+𝑟
+𝑡
+−
+𝑖
+𝑡
+𝑒
+𝑚
+−
+𝑝
+𝑟
+𝑖
+𝑐
+𝑒
+"
+>
+{money(item.product.price)}</div>
+
+<div class="qty"> <button onclick="changeQuantity(
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑖
+𝑑
+,
+−
+1
+)
+"
+>
+−
+<
+/
+𝑏
+𝑢
+𝑡
+𝑡
+𝑜
+𝑛
+>
+<
+𝑠
+𝑝
+𝑎
+𝑛
+>
+{item.quantity}</span> <button onclick="changeQuantity(${item.id}, 1)">+</button> </div> </div>
+
+<div style="text-align:right;"> <strong>
+𝑚
+𝑜
+𝑛
+𝑒
+𝑦
+(
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑝
+𝑟
+𝑖
+𝑐
+𝑒
+∗
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑞
+𝑢
+𝑎
+𝑛
+𝑡
+𝑖
+𝑡
+𝑦
+)
+<
+/
+𝑠
+𝑡
+𝑟
+𝑜
+𝑛
+𝑔
+>
+<
+𝑏
+𝑟
+>
+<
+𝑏
+𝑢
+𝑡
+𝑡
+𝑜
+𝑛
+𝑐
+𝑙
+𝑎
+𝑠
+𝑠
+=
+"
+𝑟
+𝑒
+𝑚
+𝑜
+𝑣
+𝑒
+−
+𝑖
+𝑡
+𝑒
+𝑚
+"
+𝑜
+𝑛
+𝑐
+𝑙
+𝑖
+𝑐
+𝑘
+=
+"
+𝑟
+𝑒
+𝑚
+𝑜
+𝑣
+𝑒
+𝐹
+𝑟
+𝑜
+𝑚
+𝐶
+𝑎
+𝑟
+𝑡
+(
+{item.id})"> Remove </button> </div> </div> `).join(""); }
+
+$("#cartSubtotal").textContent = money(getSubtotal()); $("#cartShipping").textContent = getShipping() === 0 ? "FREE" : money(getShipping());
+
+$("#cartDiscount").textContent = discount > 0 ? "-" + money(getDiscount()) : "$0.00";
+
+$("#cartTotal").textContent = money(getTotal());
+
+$("#checkoutButton").disabled = details.length === 0; $("#checkoutButton").style.opacity = details.length ? "1" : ".5";
+
+updateWishlistCount(); renderProducts(); }
+
+function toggleWishlist(id) { if (wishlist.includes(id)) { wishlist = wishlist.filter(item => item !== id); showToast("Removed from wishlist."); } else { wishlist.push(id); showToast("Added to wishlist."); }
+
+saveState(); updateWishlistCount(); renderProducts(); }
+
+function updateWishlistCount() { const count = wishlist.length; $("#wishlistCount").textContent = count; $("#wishlistCount").classList.toggle("hidden", count === 0); }
+
+function openCart() { $("#cartDrawer").classList.add("active"); $("#overlay").classList.add("active"); document.body.classList.add("no-scroll"); }
+
+function closeCartDrawer() { $("#cartDrawer").classList.remove("active"); $("#overlay").classList.remove("active"); document.body.classList.remove("no-scroll"); }
+
+function openProduct(id) { const product = products.find(p => p.id === id);
+
+if (!product) return;
+
+selectedProduct = product;
+
+$("#modalProductImage").src = product.image; $("#modalProductImage").alt = product.name; $("#modalProductCategory").textContent = product.category; $("#modalProductName").textContent = product.name; $("#modalProductRating").textContent = stars(product.rating) + " " + product.rating; $("#modalProductPrice").textContent = money(product.price); $("#modalProductDescription").textContent = product.description;
+
+$("#productModal").classList.add("active"); document.body.classList.add("no-scroll"); }
+
+function closeProduct() { $("#productModal").classList.remove("active");
+
+if (!$("#cartDrawer").classList.contains("active")) { document.body.classList.remove("no-scroll"); } }
+
+function renderCheckoutSummary() { const details = cartDetails();
+
+$("#checkoutSummary").innerHTML = ${details.map(item => <div class="summary-line"> <span>${item.product.name} × 
+𝑖
+𝑡
+𝑒
+𝑚
+.
+𝑞
+𝑢
+𝑎
+𝑛
+𝑡
+𝑖
+𝑡
+𝑦
+<
+/
+𝑠
+𝑝
+𝑎
+𝑛
+>
+<
+𝑠
+𝑝
+𝑎
+𝑛
+>
+{money(item.product.price * item.quantity)}</span> </div> `).join("")}
+
+<div style="border-top:1px solid var(--border);margin-top:15px;padding-top:15px;"> <div class="summary-line"> <span>Subtotal</span> <span>${money(getSubtotal())}</span> </div>
+
+<div class="summary-line"> <span>Shipping</span> <span>${getShipping() === 0 ? "FREE" : money(getShipping())}</span> </div>
+
+<div class="summary-line"> <span>Discount</span> <span>${discount ? "-" + money(getDiscount()) : "$0.00"}</span> </div>
+
+<div class="summary-line total"> <span>Total</span> <span>${money(getTotal())}</span> </div> </div>
+
+<div style="margin-top:20px;"> <input class="form-control" id="promoCode" placeholder="Promo code">
+
+<button class="btn btn-outline full-btn" type="button" onclick="applyPromo()"> Apply code </button>
+
+<small style="display:block;color:var(--muted);margin-top:8px;"> Demo code: LUXE10 </small> </div> `; }
+
+function applyPromo() { const input = $("#promoCode"); if (!input) return;
+
+const code = input.value.trim().toUpperCase();
+
+if (code === "LUXE10") { discount = .10; showToast("10% discount applied."); renderCheckoutSummary(); updateCart(); } else { showToast("Invalid promo code.", "error"); } }
+
+function openCheckout() { if (!cart.length) { showToast("Your bag is empty.", "error"); return; }
+
+closeCartDrawer(); renderCheckoutSummary();
+
+$("#checkoutModal").classList.add("active"); document.body.classList.add("no-scroll"); }
+
+function closeCheckout() { $("#checkoutModal").classList.remove("active");
+
+if (!$("#productModal").classList.contains("active")) { document.body.classList.remove("no-scroll"); } }
+
+function formatCardNumber(value) { return value .replace(/\D/g, "") .slice(0, 16) .replace(/(.{4})/g, "$1 ") .trim(); }
+
+function formatExpiry(value) { value = value.replace(/\D/g, "").slice(0, 4);
+
+if (value.length > 2) { return value.slice(0, 2) + " / " + value.slice(2); }
+
+return value; }
+
+$("#searchInput").addEventListener("input", event => { searchTerm = event.target.value; renderProducts(); });
+
+$("#sortSelect").addEventListener("change", renderProducts);
+
+$$(".filter-btn").forEach(button => { button.addEventListener("click", () => { $$(".filter-btn").forEach(btn => btn.classList.remove("active"));
+
+button.classList.add("active");
+
+activeFilter = button.dataset.filter;
+
+renderProducts(); }); });
+
+$$(".category").forEach(category => { category.addEventListener("click", () => { activeFilter = category.dataset.category;
+
+$$(".filter-btn").forEach(button => { button.classList.toggle( "active", button.dataset.filter === activeFilter ); });
+
+renderProducts();
+
+document.querySelector("#shop").scrollIntoView({ behavior: "smooth" }); }); });
+
+$("#cartButton").addEventListener("click", openCart);
+
+$("#closeCart").addEventListener("click", closeCartDrawer);
+
+$("#overlay").addEventListener("click", closeCartDrawer);
+
+$("#closeProductModal").addEventListener("click", closeProduct);
+
+$("#productModal .modal-overlay").addEventListener("click", closeProduct);
+
+$("#modalAddButton").addEventListener("click", () => { if (!selectedProduct) return;
+
+addToCart(selectedProduct.id); closeProduct(); openCart(); });
+
+$("#checkoutButton").addEventListener("click", openCheckout);
+
+$("#closeCheckoutModal").addEventListener("click", closeCheckout);
+
+$("#checkoutModal .modal-overlay").addEventListener("click", closeCheckout);
+
+$("#wishlistNav").addEventListener("click", () => { if (!wishlist.length) { showToast("Your wishlist is empty."); return; }
+
+activeFilter = "All"; searchTerm = "";
+
+$("#searchInput").value = "";
+
+$$(".filter-btn").forEach(button => { button.classList.toggle( "active", button.dataset.filter === "All" ); });
+
+const wishlistProducts = products.filter(product => wishlist.includes(product.id) );
+
+$("#productGrid").innerHTML = wishlistProducts.map(product => ` <article class="product"> <div class="product-image"> <img src="
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑖
+𝑚
+𝑎
+𝑔
+𝑒
+"
+𝑎
+𝑙
+𝑡
+=
+"
+{product.name}">
+
+<button class="wishlist active" onclick="toggleWishlist(${product.id})"> ♥ </button>
+
+<div class="quick-add"> <button class="btn full-btn" onclick="addToCart(${product.id})"> Add to bag </button> </div> </div>
+
+<div class="product-category">
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑐
+𝑎
+𝑡
+𝑒
+𝑔
+𝑜
+𝑟
+𝑦
+<
+/
+𝑑
+𝑖
+𝑣
+>
+<
+𝑑
+𝑖
+𝑣
+𝑐
+𝑙
+𝑎
+𝑠
+𝑠
+=
+"
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+−
+𝑛
+𝑎
+𝑚
+𝑒
+"
+>
+{product.name}</div>
+
+<div class="product-bottom"> <div class="price">
+𝑚
+𝑜
+𝑛
+𝑒
+𝑦
+(
+𝑝
+𝑟
+𝑜
+𝑑
+𝑢
+𝑐
+𝑡
+.
+𝑝
+𝑟
+𝑖
+𝑐
+𝑒
+)
+<
+/
+𝑑
+𝑖
+𝑣
+>
+<
+𝑑
+𝑖
+𝑣
+𝑐
+𝑙
+𝑎
+𝑠
+𝑠
+=
+"
+𝑠
+𝑡
+𝑎
+𝑟
+𝑠
+"
+>
+{stars(product.rating)}</div> </div> </article> `).join("");
+
+document.querySelector("#shop").scrollIntoView({ behavior: "smooth" }); });
+
+$("#mobileMenu").addEventListener("click", () => { $("#navLinks").classList.toggle("active"); });
+
+$$("#navLinks a").forEach(link => { link.addEventListener("click", () => { $("#navLinks").classList.remove("active"); }); });
+
+$("#themeToggle").addEventListener("click", () => { const current = document.documentElement.dataset.theme;
+
+if (current === "dark") { document.documentElement.dataset.theme = ""; localStorage.setItem("luxe-theme", "light"); $("#themeToggle").textContent = "☾"; } else { document.documentElement.dataset.theme = "dark"; localStorage.setItem("luxe-theme", "dark"); $("#themeToggle").textContent = "☀"; } });
+
+const savedTheme = localStorage.getItem("luxe-theme");
+
+if (savedTheme === "dark") { document.documentElement.dataset.theme = "dark"; $("#themeToggle").textContent = "☀"; }
+
+$("#newsletterForm").addEventListener("submit", event => { event.preventDefault();
+
+const email = $("#newsletterEmail").value.trim();
+
+if (!email) return;
+
+showToast("Welcome to LUXE. Your 10% welcome offer is ready.");
+
+event.target.reset(); });
+
+$("#contactForm").addEventListener("submit", event => { event.preventDefault();
+
+const name = $("#contactName").value.trim();
+
+showToast( Thanks ${name || "there"} — your message has been received. );
+
+event.target.reset(); });
+
+$("#checkoutCard").addEventListener("input", event => { event.target.value = formatCardNumber(event.target.value); });
+
+$("#checkoutExpiry").addEventListener("input", event => { event.target.value = formatExpiry(event.target.value); });
+
+$("#checkoutForm").addEventListener("submit", event => { event.preventDefault();
+
+const orderNumber = "LUXE-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+$("#checkoutContent").innerHTML = ` <div class="success"> <div class="success-icon">✓</div>
+
+<div class="eyebrow">Order confirmed</div>
+
+<h2 style="font-size:40px;margin-bottom:15px;"> Thank you for your order. </h2>
+
+<p style="color:var(--muted);max-width:500px;margin:0 auto 10px;"> Your demo order has been successfully created. </p>
+
+<p style="margin-bottom:25px;"> Order number: <strong>${orderNumber}</strong> </p>
+
+<button class="btn" onclick="finishOrder()"> Continue shopping </button> </div> `; });
+
+function finishOrder() { cart = []; discount = 0;
+
+saveState(); updateCart();
+
+closeCheckout();
+
+window.location.hash = "shop";
+
+setTimeout(() => { document.querySelector("#shop").scrollIntoView({ behavior: "smooth" }); }, 100); }
+
+document.addEventListener("keydown", event => { if (event.key === "Escape") { closeCartDrawer(); closeProduct(); closeCheckout(); } });
+
+renderProducts(); updateCart(); </script>
+
+</body> </html>
